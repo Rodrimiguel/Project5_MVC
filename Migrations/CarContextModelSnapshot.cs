@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
+// se va modificando a medida que hagamos ciertas modificaiones.
+// no se modifica nada manualmente.
 namespace Clase5.Migrations
 {
     [DbContext(typeof(CarContext))]

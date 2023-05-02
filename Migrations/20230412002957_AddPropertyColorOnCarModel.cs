@@ -8,9 +8,9 @@ namespace Clase5.Migrations
     public partial class AddPropertyColorOnCarModel : Migration
     {
         /// <inheritdoc />
-        protected override void Up(MigrationBuilder migrationBuilder)
+        protected override void Up(MigrationBuilder migrationBuilder) // Se ejecutará cuando hagamos un database update
         {
-            migrationBuilder.AddColumn<string>(
+            migrationBuilder.AddColumn<string>(// agrega columna
                 name: "Color",
                 table: "Car",
                 type: "TEXT",
@@ -19,9 +19,9 @@ namespace Clase5.Migrations
         }
 
         /// <inheritdoc />
-        protected override void Down(MigrationBuilder migrationBuilder)
+        protected override void Down(MigrationBuilder migrationBuilder) // Poder movernos entre migracines (deshacer los cambios) 
         {
-            migrationBuilder.DropColumn(
+            migrationBuilder.DropColumn(// eliminar columna color
                 name: "Color",
                 table: "Car");
         }
